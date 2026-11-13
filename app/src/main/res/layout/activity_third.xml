@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ekranTrzeci"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/naglowekLokalizacja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Moja Lokalizacja GPS"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnZacznijSledzenie"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:text="ROZPOCZNIJ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/naglowekLokalizacja" />
+
+    <Button
+        android:id="@+id/btnZatrzymajSledzenie"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:text="ZAKOŃCZ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnZacznijSledzenie" />
+
+    <TextView
+        android:id="@+id/etykietaSzerokosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Szerokość geogr.:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnZatrzymajSledzenie" />
+
+    <TextView
+        android:id="@+id/widokWartoscSzerokosci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Oczekiwanie..."
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etykietaSzerokosc"
+        app:layout_constraintStart_toEndOf="@+id/etykietaSzerokosc" />
+
+    <TextView
+        android:id="@+id/etykietaDlugosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:text="Długość geogr.:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etykietaSzerokosc" />
+
+    <TextView
+        android:id="@+id/widokWartoscDlugosci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Oczekiwanie..."
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etykietaDlugosc"
+        app:layout_constraintStart_toEndOf="@+id/etykietaDlugosc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
